@@ -19,7 +19,7 @@ class SignInPage {
                 <section class="signIn">
                     <img src="./img/logo.png" alt="Logo"/>
                     <article class="signInFormContainer">
-                        <form>
+                        <form method="post">
                             <input type="email" name="email" placeholder="Email"/>
                             <input type="password" name="password" placeholder="Password"/>
                             <button type="submit">Sign In</button>
