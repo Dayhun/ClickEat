@@ -1,6 +1,4 @@
 <?php
-echo "hi";
-require_once("inc/Page.class.php");
+require_once("inc/SignInPage.class.php");
 
-echo Page::htmlStart();
-echo Page::htmlEnd();
+echo SignInPage::signIn();

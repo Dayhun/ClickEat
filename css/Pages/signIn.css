@@ -1,0 +1,98 @@
+@media (min-width: 200px) {
+    .signIn {
+        height: 100vh;
+        background-color: var(--mainColor);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 4vh;
+    }
+    .signIn img {
+        width: 50%;
+    }
+    .signInFormContainer {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2vh;
+    }
+    .signInFormContainer > form {
+        height: 210px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: white;
+        padding: 8%;
+        border-radius: 10px;
+        border: 1px solid var(--borderColor);
+    }
+    .signInFormContainer > form > input::placeholder {
+        color: var(--inputColor);
+        font-size: 15px;
+    }
+    .signInFormContainer > form > input {
+        border: none;
+        border-bottom: 1px solid var(--borderColor);
+        padding: 4% 2%;
+    }
+    .signInFormContainer [type="submit"] {
+        background-color: var(--btnColor);
+        color: white;
+        border: none;
+        padding: 3%;
+        border-radius: 7px;
+    }
+    .signInFormContainer [type="submit"]:hover,
+    .signInFormContainer > article > button:hover {
+        background-color: var(--hoverColor);
+        color: black;
+    }
+    .signInFormContainer > article {
+        display: flex;
+        justify-content: center;
+    }
+    .signInFormContainer > article > button {
+        width: 40%;
+        background-color: var(--btnColor);
+        color: white;
+        border: none;
+        padding: 3%;
+        border-radius: 7px;
+    }
+}
+
+@media (min-width: 700px) {
+    .signIn img {
+        width: 30%;
+    }
+    .signInFormContainer > form {
+        padding: 5%;
+        justify-content: space-around;
+    }
+    .signInFormContainer > form > input {
+        padding: 2%;
+    }
+    .signInFormContainer > form > input::placeholder {
+        font-size: 17px;
+    }
+    .signInFormContainer [type="submit"],
+    .signInFormContainer > article > button {
+        font-size: 17px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .signIn img {
+        width: 15%;
+    }
+    .signInFormContainer {
+        width: 40%;
+    }
+    .signInFormContainer > form {
+        padding: 4%;
+    }
+    .signInFormContainer > form > input::placeholder {
+        font-size: 15px;
+    }
+}
