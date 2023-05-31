@@ -1,0 +1,75 @@
+@media (min-width: 200px) {
+    .mainHeader {
+        background-color: var(--mainColor);
+        height: 7vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .mainHeader > figure {
+        width: 120px;
+    }
+    .mainHeader > figure > img {
+        width: 100%;
+    }
+    .mainHeader > .headerSection {
+        display: flex;
+        width: 40%;
+        column-gap: 4vw;
+        justify-content: flex-end;
+    }
+    .headerSection > figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .headerSection > figure:hover {
+        cursor: pointer;
+    }  
+    .headerSection img {
+        width: 24px;
+    }
+    .headerSection figcaption {
+        display: none;
+    }
+}
+@media (min-width: 700px) {
+    .mainHeader {
+        height: 5vh;
+        padding: 1% 4%;
+        justify-content: space-between;
+    }
+    .mainHeader > figure {
+        width: 110px;
+    }
+    .mainHeader > .headerSection {
+        column-gap: 3vw;
+    }
+    .headerSection > figure {
+        row-gap: 0.5vh;
+    }
+    .headerSection img {
+        width: 22px;
+    }
+    .headerSection figcaption {
+        display: block;
+        font-size: 12px;
+    }
+}
+@media (min-width: 1000px) {
+    .mainHeader {
+        padding: 1% 6%;
+    }
+    .mainHeader > figure {
+        width: 140px;
+    }
+    .mainHeader > .headerSection {
+        column-gap: 2vw;
+    }
+    .headerSection img {
+        width: 25px;
+    }
+    .headerSection figcaption {
+        font-size: 15px;
+    }
+}
