@@ -1,4 +1,5 @@
-@media (min-width: 200px) {
+@media (min-width: 300px) {
+    /* Header */
     .mainHeader {
         background-color: var(--mainColor);
         height: 7vh;
@@ -32,8 +33,37 @@
     .headerSection figcaption {
         display: none;
     }
+    /* Nav */
+    .mainNav {
+        display: flex;
+        justify-content: center;
+        padding: 3% 5%;
+    }
+    .mainNav > ul {
+        white-space:nowrap; 
+        overflow-x: auto;
+        display: flex;
+        width: 100%;
+    }
+    .mainNav li {
+        padding: 3%;
+    }
+    .mainNav img {
+        width: 24px;
+    }
+    .mainNav a {
+        display:flex; 
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1vh;
+    }
+    .mainNav a > p {
+        color: black;
+        font-size: 13px;
+    }
 }
 @media (min-width: 700px) {
+    /* Header */
     .mainHeader {
         height: 5vh;
         padding: 1% 4%;
@@ -55,8 +85,22 @@
         display: block;
         font-size: 12px;
     }
+    /* Nav */
+    .mainNav {
+        padding: 1% 3%;
+    }
+    .mainNav li {
+        padding: 2% 3%;
+    }
+    .mainNav img {
+        width: 26px;
+    }
+    .mainNav a > p {
+        font-size: 15px;
+    }
 }
 @media (min-width: 1000px) {
+    /* Header */
     .mainHeader {
         padding: 1% 6%;
     }
@@ -71,5 +115,19 @@
     }
     .headerSection figcaption {
         font-size: 15px;
+    }
+    /* Nav */
+    .mainNav {
+        padding: 0.5%;
+    }
+    .mainNav > ul {
+        justify-content: space-evenly;
+        width: 85%;
+    }
+    .mainNav li {
+        padding: 1%;
+    }
+    .mainNav img {
+        width: 23px;
     }
 }
