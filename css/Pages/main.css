@@ -33,6 +33,16 @@
     .headerSection figcaption {
         display: none;
     }
+    .headerSection button {
+        border: none;
+        border-radius: 5px;
+        padding: 2.5%;
+        background-color: #F2F2F2;
+    }
+    .headerSection button:hover {
+        cursor: pointer;
+        background-color: var(--hoverColor);
+    }
     /* Nav */
     .mainNav {
         display: flex;
@@ -47,6 +57,9 @@
     }
     .mainNav li {
         padding: 3%;
+    }
+    .mainNav a:hover > p {
+        color: var(--btnColor);
     }
     .mainNav img {
         width: 24px;
@@ -85,6 +98,21 @@
     .mainAdv > img {
         width: 25%;
     }
+    /* Restaurant */
+    .mainRestaurant {
+        width: 90%;
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 1vh;
+    }
+    .mainRestaurant > h3 {
+        font-weight: 800;
+        font-size: 18px;
+    }
+    .mainRestaurant img {
+        width: 25%;
+    }    
 }
 @media (min-width: 700px) {
     /* Header */
@@ -108,6 +136,9 @@
     .headerSection figcaption {
         display: block;
         font-size: 12px;
+    }
+    .headerSection button {
+        padding: 2%;
     }
     /* Nav */
     .mainNav {
@@ -156,6 +187,10 @@
     }
     .headerSection figcaption {
         font-size: 15px;
+    }
+    .headerSection button {
+        padding: 2%;
+        border-radius: 10px;
     }
     /* Nav */
     .mainNav {
