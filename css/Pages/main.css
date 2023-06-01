@@ -108,11 +108,57 @@
     }
     .mainRestaurant > h3 {
         font-weight: 800;
+        font-size: 20px;
+    }
+    .mainRestaurant figure > img {
+        /* width: 350px;
+        height: 140px; */
+        width: 90vw;
+        height: 50vw;
+        border-radius: 10px;
+    }    
+    .mainRestaurantArticle {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 6vw;
+    }
+    .mainRestaurantArticle > figure{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1vh;
+    }
+
+    .mainRestaurantArticle figcaption {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.5vh;
+    }
+    .mainRestaurantArticle h4 {
+        font-weight: 700;
         font-size: 18px;
     }
-    .mainRestaurant img {
-        width: 25%;
+    .mainRestaurantArticle ul {
+        display: flex;
+        column-gap: 2vw;
+        align-items: center;
+    }
+    .mainRestaurantArticle ul > li { 
+        display: flex;
+        align-items: flex-start;
+        column-gap: 1vw;
+        color: var(--inputColor);
     }    
+    .mainRestaurantArticle figcaption img {
+        width: 13px;
+        height: 13px;
+        color: var(--inputColor);
+    }
+    .mainRestaurantArticle ul > li:nth-child(2) {
+        width: 5px;
+        height: 5px;
+        background-color: var(--inputColor);
+        border-radius: 50%;
+    }
 }
 @media (min-width: 700px) {
     /* Header */
@@ -169,6 +215,40 @@
     } 
     .mainAdv > img {
         width: 20%;
+    }
+    /* Restaurant */
+    .mainRestaurant {
+        row-gap: 2vh;
+    }
+    .mainRestaurant > h3 {
+        font-size: 25px;
+    }
+    .mainRestaurant figure > img {
+        width: 43vw;
+        height: 25vw;
+    }    
+    .mainRestaurantArticle {
+        gap: 4vw;
+    }
+    .mainRestaurantArticle h4 {
+        font-size: 20px;
+    }
+    .mainRestaurantArticle ul > li { 
+        display: flex;
+        align-items: flex-start;
+        column-gap: 1vw;
+        color: var(--inputColor);
+    }    
+    .mainRestaurantArticle figcaption img {
+        width: 13px;
+        height: 13px;
+        color: var(--inputColor);
+    }
+    .mainRestaurantArticle ul > li:nth-child(2) {
+        width: 5px;
+        height: 5px;
+        background-color: var(--inputColor);
+        border-radius: 50%;
     }
 }
 @media (min-width: 1000px) {

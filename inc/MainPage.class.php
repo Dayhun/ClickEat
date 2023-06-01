@@ -130,13 +130,100 @@ class MainPage{
                 <figure>
                     <img src="./img/mcdonald.jpg" alt="rest-img"/>
                     <figcaption>
-                        <h3>Mc Donalds</h3>
+                        <h4>Mc Donalds</h4>
                         <ul>
                             <li>
                                 $
                             </li>
                             <li>
-                                <img src="./img/star.png" alt="star-img"/>
+                            </li>
+                            <li>
+                                <img src="./img/star-gray.png" alt="star-img"/>
+                                4.5
+                            </li>
+                        </ul>
+                    </figcaption>
+                </figure>  
+                <figure>
+                    <img src="./img/mcdonald.jpg" alt="rest-img"/>
+                    <figcaption>
+                        <h4>Mc Donalds</h4>
+                        <ul>
+                            <li>
+                                $
+                            </li>
+                            <li>
+                            </li>
+                            <li>
+                                <img src="./img/star-gray.png" alt="star-img"/>
+                                4.5
+                            </li>
+                        </ul>
+                    </figcaption>
+                </figure>  
+                <figure>
+                    <img src="./img/mcdonald.jpg" alt="rest-img"/>
+                    <figcaption>
+                        <h4>Mc Donalds</h4>
+                        <ul>
+                            <li>
+                                $
+                            </li>
+                            <li>
+                            </li>
+                            <li>
+                                <img src="./img/star-gray.png" alt="star-img"/>
+                                4.5
+                            </li>
+                        </ul>
+                    </figcaption>
+                </figure>  
+                <figure>
+                    <img src="./img/mcdonald.jpg" alt="rest-img"/>
+                    <figcaption>
+                        <h4>Mc Donalds</h4>
+                        <ul>
+                            <li>
+                                $
+                            </li>
+                            <li>
+                            </li>
+                            <li>
+                                <img src="./img/star-gray.png" alt="star-img"/>
+                                4.5
+                            </li>
+                        </ul>
+                    </figcaption>
+                </figure>  
+                <figure>
+                    <img src="./img/mcdonald.jpg" alt="rest-img"/>
+                    <figcaption>
+                        <h4>Mc Donalds</h4>
+                        <ul>
+                            <li>
+                                $
+                            </li>
+                            <li>
+                            </li>
+                            <li>
+                                <img src="./img/star-gray.png" alt="star-img"/>
+                                4.5
+                            </li>
+                        </ul>
+                    </figcaption>
+                </figure>  
+                <figure>
+                    <img src="./img/mcdonald.jpg" alt="rest-img"/>
+                    <figcaption>
+                        <h4>Mc Donalds</h4>
+                        <ul>
+                            <li>
+                                $
+                            </li>
+                            <li>
+                            </li>
+                            <li>
+                                <img src="./img/star-gray.png" alt="star-img"/>
                                 4.5
                             </li>
                         </ul>
@@ -147,6 +234,7 @@ class MainPage{
         ';
         return $mainPageRestaurant;
     }
+
     // public static function mainPageRestaurant() : string {
     //     $mainPageRestaurant = '
     //     <section class="mainRestaurant">
@@ -174,7 +262,7 @@ class MainPage{
                                 //     '.$res->getpriceRange().'
                                 // </li>
                                 // <li>
-                                //     <img src="./img/star.png" alt="star-img"/>
+                                //     <img src="./img/star-gray.png" alt="star-img"/>
                                 //     '.$res->getScore().'
                                 // </li>
         //                 </ul>
