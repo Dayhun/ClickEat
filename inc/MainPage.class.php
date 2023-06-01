@@ -272,4 +272,25 @@ class MainPage{
     //     ';
     //     return $mainRestFigure;
     // }
+
+    public static function mainPageFooter() : string {
+        $mainPageFooter = '
+        <footer class="mainFooter">
+            <section>
+                <h4>GET SOCIAL</h4>
+                <ul>
+                    <li><a href="https://www.facebook.com/" class="fa-brands fa-facebook-f"></a></li>
+                    <li><a href="https://twitter.com/" class="fa-brands fa-twitter"></a></li>
+                    <li><a href="#" class="fa-solid fa-envelope"></a></li>
+                    <li><a href="#" class="fa-solid fa-phone"></a></li>
+                </ul>
+            </section>
+            <article>
+                <p>&copy; Copyright Click Eat</p>
+                <p>Design by <span>Day Gabriel Jacques</span></p>
+            </article>
+        </footer>
+        ';
+        return $mainPageFooter;
+    }
 }

@@ -26,7 +26,7 @@
     }
     .headerSection > figure:hover {
         cursor: pointer;
-    }  
+    }
     .headerSection img {
         width: 24px;
     }
@@ -37,7 +37,7 @@
         border: none;
         border-radius: 5px;
         padding: 2.5%;
-        background-color: #F2F2F2;
+        background-color: #f2f2f2;
     }
     .headerSection button:hover {
         cursor: pointer;
@@ -50,7 +50,7 @@
         padding: 3% 5%;
     }
     .mainNav > ul {
-        white-space:nowrap; 
+        white-space: nowrap;
         overflow-x: auto;
         display: flex;
         width: 100%;
@@ -65,7 +65,7 @@
         width: 24px;
     }
     .mainNav a {
-        display:flex; 
+        display: flex;
         flex-direction: column;
         align-items: center;
         row-gap: 1vh;
@@ -76,7 +76,7 @@
     }
     /* Adv */
     .mainAdv {
-        background-color: #FFE7B9;
+        background-color: #ffe7b9;
         width: 96%;
         height: 20vh;
         display: flex;
@@ -111,18 +111,16 @@
         font-size: 20px;
     }
     .mainRestaurant figure > img {
-        /* width: 350px;
-        height: 140px; */
         width: 90vw;
         height: 50vw;
         border-radius: 10px;
-    }    
+    }
     .mainRestaurantArticle {
         display: flex;
         flex-wrap: wrap;
         gap: 6vw;
     }
-    .mainRestaurantArticle > figure{
+    .mainRestaurantArticle > figure {
         display: flex;
         flex-direction: column;
         row-gap: 1vh;
@@ -142,12 +140,12 @@
         column-gap: 2vw;
         align-items: center;
     }
-    .mainRestaurantArticle ul > li { 
+    .mainRestaurantArticle ul > li {
         display: flex;
         align-items: flex-start;
         column-gap: 1vw;
         color: var(--inputColor);
-    }    
+    }
     .mainRestaurantArticle figcaption img {
         width: 13px;
         height: 13px;
@@ -158,6 +156,45 @@
         height: 5px;
         background-color: var(--inputColor);
         border-radius: 50%;
+    }
+    /* Footer */
+    .mainFooter {
+        margin-top: 4vh;
+        background-color: rgb(91, 90, 90);
+        color: white;
+        padding: 8% 6%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 4vh;
+    }
+    .mainFooter > section {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1vh;
+    }
+    .mainFooter > section > h4 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+    .mainFooter > section > ul {
+        display: flex;
+        column-gap: 3vw;
+    }
+    .mainFooter > section a {
+        font-size: 18px;
+        color: white;
+    }
+    .mainFooter > section a:hover {
+        color: var(--hoverColor);
+        cursor: pointer;
+    }
+    .mainFooter > article {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1vh;
+    }
+    .mainFooter > article span {
+        color: gainsboro;
     }
 }
 @media (min-width: 700px) {
@@ -212,7 +249,7 @@
     .mainAdv > article > p {
         font-size: 20px;
         text-align: center;
-    } 
+    }
     .mainAdv > img {
         width: 20%;
     }
@@ -226,19 +263,19 @@
     .mainRestaurant figure > img {
         width: 43vw;
         height: 25vw;
-    }    
+    }
     .mainRestaurantArticle {
         gap: 4vw;
     }
     .mainRestaurantArticle h4 {
         font-size: 20px;
     }
-    .mainRestaurantArticle ul > li { 
+    .mainRestaurantArticle ul > li {
         display: flex;
         align-items: flex-start;
         column-gap: 1vw;
         color: var(--inputColor);
-    }    
+    }
     .mainRestaurantArticle figcaption img {
         width: 13px;
         height: 13px;
@@ -249,6 +286,23 @@
         height: 5px;
         background-color: var(--inputColor);
         border-radius: 50%;
+    }
+    /* Footer */
+    .mainFooter {
+        margin-top: 3vh;
+        padding: 5% 3% 2%;
+        row-gap: 4vh;
+    }
+    .mainFooter > section > h4 {
+        font-size: 18px;
+    }
+    .mainFooter > section > ul {
+        column-gap: 2vw;
+    }
+    .mainFooter > article {
+        flex-direction: row;
+        column-gap: 2vw;
+        justify-content: space-between;
     }
 }
 @media (min-width: 1000px) {
@@ -293,7 +347,7 @@
     .mainAdv > article > p {
         font-size: 22px;
         text-align: center;
-    } 
+    }
     .mainAdv > img {
         width: 16%;
     }
@@ -304,10 +358,10 @@
     .mainRestaurant figure > img {
         width: 27vw;
         height: 19vw;
-    }  
+    }
     .mainRestaurantArticle h4 {
         font-size: 22px;
-    } 
+    }
     .mainRestaurantArticle ul {
         column-gap: 1vw;
     }
@@ -319,5 +373,25 @@
     }
     .mainRestaurantArticle ul > li:last-child {
         column-gap: 0.5vw;
+    }
+    /* Footer */
+    .mainFooter {
+        padding: 3%;
+        row-gap: 6vh;
+    }
+    .mainFooter > section {
+        align-items: center;
+        row-gap: 2vh;
+    }
+    .mainFooter > section > h4{
+        font-size: 20px;
+    }
+    .mainFooter > section > ul {
+        column-gap: 2vw;
+    }
+    .mainFooter > article {
+        flex-direction: row;
+        column-gap: 2vw;
+        justify-content: space-between;
     }
 }
