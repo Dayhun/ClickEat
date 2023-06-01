@@ -297,4 +297,27 @@
     .mainAdv > img {
         width: 16%;
     }
+    /* Restaurant */
+    .mainRestaurant > h3 {
+        font-size: 28px;
+    }
+    .mainRestaurant figure > img {
+        width: 27vw;
+        height: 19vw;
+    }  
+    .mainRestaurantArticle h4 {
+        font-size: 22px;
+    } 
+    .mainRestaurantArticle ul {
+        column-gap: 1vw;
+    }
+    .mainRestaurantArticle ul > li:nth-child(2) {
+        width: 5px;
+        height: 5px;
+        background-color: var(--inputColor);
+        border-radius: 50%;
+    }
+    .mainRestaurantArticle ul > li:last-child {
+        column-gap: 0.5vw;
+    }
 }
