@@ -93,4 +93,24 @@ class MainPage{
         ';
         return $mainPageNav;
     }
+
+    public static function mainPageAdv() : string {
+        $mainPageAdv = '
+        <section class="mainAdv">
+            <article>
+                <h3>$0 Delivery Fee</h3>
+                <p>Try our membership for free</p>
+            </article>
+            <img src="./img/free-delivery.png" alt="adv-img" />
+        </section>
+        ';
+        return $mainPageAdv;
+    }
 }
+// <section class="mainAdv">
+//                 <article>
+//                     <h3>$0 Delivery Fee</h3>
+//                     <p>Try our membership for free</p>
+//                 </article>
+//                 <img src="./img/adv.jpg" alt="adv-img" />
+//             </section>

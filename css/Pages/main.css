@@ -61,6 +61,30 @@
         color: black;
         font-size: 13px;
     }
+    /* Adv */
+    .mainAdv {
+        background-color: #FFE7B9;
+        width: 96%;
+        height: 20vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 2%;
+    }
+    .mainAdv > article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 2vh;
+    }
+    .mainAdv > article > h3 {
+        font-weight: 800;
+        font-size: 25px;
+        text-align: center;
+    }
+    .mainAdv > img {
+        width: 25%;
+    }
 }
 @media (min-width: 700px) {
     /* Header */
@@ -98,6 +122,23 @@
     .mainNav a > p {
         font-size: 15px;
     }
+    /* Adv */
+    .mainAdv {
+        height: 25vh;
+    }
+    .mainAdv > article {
+        row-gap: 2.5vh;
+    }
+    .mainAdv > article > h3 {
+        font-size: 40px;
+    }
+    .mainAdv > article > p {
+        font-size: 20px;
+        text-align: center;
+    } 
+    .mainAdv > img {
+        width: 20%;
+    }
 }
 @media (min-width: 1000px) {
     /* Header */
@@ -129,5 +170,16 @@
     }
     .mainNav img {
         width: 23px;
+    }
+    /* Adv */
+    .mainAdv > article > h3 {
+        font-size: 45px;
+    }
+    .mainAdv > article > p {
+        font-size: 22px;
+        text-align: center;
+    } 
+    .mainAdv > img {
+        width: 16%;
     }
 }
