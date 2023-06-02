@@ -16,6 +16,7 @@ class SignInPage {
                 <article>
                     <button type="button">Sign Up</button>
                 </article>
+                <button>Visit the site without signing in</button>
             </article>
         </section>
         ';

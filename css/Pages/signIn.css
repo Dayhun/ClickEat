@@ -60,6 +60,14 @@
         padding: 3%;
         border-radius: 7px;
     }
+    .signInFormContainer > button {
+        border: none;
+        background-color: transparent;
+        text-decoration: underline;
+    }
+    .signInFormContainer > button:hover {
+        font-weight: 700;
+    }
 }
 
 @media (min-width: 700px) {
@@ -79,6 +87,9 @@
     .signInFormContainer [type="submit"],
     .signInFormContainer > article > button {
         font-size: 17px;
+    }
+    .signInFormContainer > button {
+        font-size: 16px;
     }
 }
 
