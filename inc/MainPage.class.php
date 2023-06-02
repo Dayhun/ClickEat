@@ -116,7 +116,6 @@ class MainPage{
                 <h3>$0 Delivery Fee</h3>
                 <p>Try our membership for free</p>
             </article>
-            <img src="./img/free-delivery.png" alt="adv-img" />
         </section>
         ';
         return $mainPageAdv;
