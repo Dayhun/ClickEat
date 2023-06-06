@@ -234,10 +234,10 @@ class MainPage{
         return $mainPageRestaurant;
     }
 
-    // public static function mainPageRestaurant() : string {
+    // public static function mainPageRestaurant(string $title="Offers for you") : string {
     //     $mainPageRestaurant = '
     //     <section class="mainRestaurant">
-    //         <h3>Offers for you</h3>
+    //         <h3>'.$title.'</h3>
     //         <article class="mainRestaurantArticle">
     //     ';
     //     foreach ($restaurantList as $restaurant) {
