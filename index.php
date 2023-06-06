@@ -6,7 +6,7 @@ require_once("inc/RestaurantPage.class.php");
 
 
 echo Page::htmlStart();
-
+echo SignInPage::signIn();
 echo Page::htmlEnd();
 
 
