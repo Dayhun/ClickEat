@@ -23,3 +23,5 @@ class SignInPage {
         return $signIn;
     }
 }
+
+echo SignInPage::signIn();

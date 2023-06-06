@@ -13,4 +13,3 @@ echo MainPage::mainPageRestaurant();
 echo MainPage::mainPageFooter();
 echo Page::htmlEnd();
 
-
