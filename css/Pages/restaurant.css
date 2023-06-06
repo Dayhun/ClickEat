@@ -1,0 +1,223 @@
+@media (min-width: 300px) {
+    .restaurantMainPic {
+        width: 100%;
+    }
+    .restaurantMainPic > img{
+        width: 100%;
+        height: 30vh;
+    }
+    .restaurantDetail {
+        display: flex;
+        flex-direction: column;
+        row-gap: 1vh;
+        padding: 5% 3%;
+    }
+    .restaurantDetail > h2 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .restaurantDetail > ul {
+        display: flex;
+        column-gap: 2vw;
+        align-items: center;
+    }
+    .restaurantDetail > ul > li {
+        display: flex;
+        align-items: flex-start;
+        column-gap: 1vw;
+        color: var(--inputColor);
+    }
+    .restaurantDetail li > img {
+        width: 13px;
+        height: 13px;
+        color: var(--inputColor);
+    }
+    .restaurantDetail > ul > li:nth-child(2) {
+        width: 5px;
+        height: 5px;
+        background-color: var(--inputColor);
+        border-radius: 50%;
+    }
+    .restaurantDetail > p {
+        color: var(--inputColor);
+    }
+    .restaurantMenu {
+        padding: 5% 3%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2vh;
+    }
+    .menuArticle { 
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2vh;
+    }
+    .menuArticle > figure {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid var(--borderColor);
+        border-radius: 10px;
+        padding: 2% 10%;
+    }
+    .menuArticle > figure > img{
+        width: 140px;
+        height: 140px;
+    }
+    .menuArticle > figure > figcaption{
+        display: flex;
+        flex-direction: column;
+        row-gap: 2vh;
+    }
+    .menuTitle {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.5vh;
+    }
+    .menuTitle > h4 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+    .menuBtn {
+        display: flex;
+        column-gap: 1.5vw;
+        align-items: center;
+    }
+    .menuBtn button{
+        border-radius: 50%;
+        border: 1px solid var(--borderColor);
+        background-color: var(--borderColor);
+        width: 5vw;
+        height: 5vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .orderArticle {
+        display: flex;
+        justify-content: center;
+    }
+    .orderBtn {
+        background-color: var(--btnColor);
+        color: white;
+        border: none;
+        padding: 2%;
+        width: 40%;
+    }
+    .orderBtn:hover {
+        background-color: var(--hoverColor);
+        color: black;
+    }   
+}
+@media (min-width: 700px) {
+    .restaurantMainPic > img{
+        width: 100%;
+        height: 25vh;
+    }
+    .restaurantDetail {
+        padding: 3%;
+    }
+    .restaurantDetail > h2 {
+        font-size: 40px;
+    }
+    .restaurantDetail li {
+        font-size: 18px;
+    }    
+    .restaurantDetail li > img {
+        width: 15px;
+        height: 15px;
+        color: var(--inputColor);
+    }
+    .restaurantDetail > ul > li:nth-child(2) {
+        width: 6px;
+        height: 6px;
+    }
+    .restaurantDetail > p {
+        font-size: 18px;
+    }
+    .restaurantMenu {
+        padding: 3%;
+    }
+    .menuArticle > figure {
+        width: 40%;
+        padding: 2% 4%;
+    }
+    .menuArticle > figure > img{
+        width: 120px;
+        height: 120px;
+    }
+    .menuTitle > h4 {
+        font-size: 19px;
+    }
+    .menuBtn button{
+        width: 3.5vw;
+        height: 3.5vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .orderBtn {
+        font-size: 16px;
+        width: 30%;
+        padding: 1.5%;
+    }
+    .orderBtn:hover {
+        background-color: var(--hoverColor);
+        color: black;
+    } 
+}
+@media (min-width: 1000px) {
+    .restaurantMainPic {
+        display: flex;
+        justify-content: center;
+    }
+    .restaurantMainPic > img { 
+        width: 75%;
+        height: 50vh;
+    }
+    .restaurantDetail {
+        padding: 3% 3% 2%;
+        align-items: center;
+    }
+    .restaurantDetail > ul {
+        column-gap: 1vw;
+    }
+    .restaurantMenu {
+        padding: 3% 2%;
+        row-gap: 5vh;
+    }
+    .menuArticle > figure {
+        width: 24%;
+        padding: 2% 4%;
+    }
+    .menuArticle > figure > img{
+        width: 120px;
+        height: 120px;
+    }
+    .menuTitle > h4 {
+        font-size: 19px;
+    }
+    .menuBtn button{
+        width: 3.5vw;
+        height: 3.5vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .orderBtn {
+        font-size: 16px;
+        width: 30%;
+        padding: 1.5%;
+    }
+    .orderBtn:hover {
+        background-color: var(--hoverColor);
+        color: black;
+    }
+    .orderNone {
+        display: none;
+    }
+}

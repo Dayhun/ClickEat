@@ -5,6 +5,7 @@ require_once("inc/RestaurantPage.class.php");
 
 echo Page::htmlStart();
 echo MainPage::mainPageHeaderLogOut();
-// echo RestaurantPage::restaurantSection();
+echo RestaurantPage::restaurantTopSection();
+echo RestaurantPage::restaurantMenuSection();
 echo MainPage::mainPageFooter();
 echo Page::htmlEnd();
