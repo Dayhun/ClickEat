@@ -2,6 +2,6 @@
 @import "./variable.css";
 
 /* Pages css */
-@import "./Pages/main.css"
 @import "./Pages/signIn.css";
-
+@import "./Pages/main.css";
+@import "./Pages/restaurant.css";
