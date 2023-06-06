@@ -31,8 +31,8 @@ class MainPage{
                 <img src="./img/logo2.png" class="logo">
             </figure>
             <section class="headerSection">
-                <button>Sign In</button>
-                <button>Sign Up</button>
+                <a href="./signInPage.php">Sign In</a>
+                <a href="./signUpPage.php">Sign Up</a>
             </section>
         </header>
         ';

@@ -44,7 +44,7 @@
         border-radius: 7px;
     }
     .signInFormContainer [type="submit"]:hover,
-    .signInFormContainer > article > button:hover {
+    .signInFormContainer > article > a:hover {
         background-color: var(--hoverColor);
         color: black;
     }
@@ -52,20 +52,21 @@
         display: flex;
         justify-content: center;
     }
-    .signInFormContainer > article > button {
+    .signInFormContainer > article > a {
         width: 40%;
         background-color: var(--btnColor);
         color: white;
-        border: none;
         padding: 3%;
         border-radius: 7px;
+        text-align: center;
     }
-    .signInFormContainer > button {
-        border: none;
+    .signInFormContainer > a {
         background-color: transparent;
         text-decoration: underline;
+        color: black;
+        text-align: center;
     }
-    .signInFormContainer > button:hover {
+    .signInFormContainer > a:hover {
         font-weight: 700;
     }
 }
@@ -85,10 +86,10 @@
         font-size: 17px;
     }
     .signInFormContainer [type="submit"],
-    .signInFormContainer > article > button {
+    .signInFormContainer > article > a {
         font-size: 17px;
     }
-    .signInFormContainer > button {
+    .signInFormContainer > a {
         font-size: 16px;
     }
 }

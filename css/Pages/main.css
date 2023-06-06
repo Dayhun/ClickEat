@@ -33,13 +33,13 @@
     .headerSection figcaption {
         display: none;
     }
-    .headerSection button {
-        border: none;
+    .headerSection a {
         border-radius: 5px;
-        padding: 2.5%;
+        padding: 3%;
         background-color: #f2f2f2;
+        color: black;
     }
-    .headerSection button:hover {
+    .headerSection a:hover {
         cursor: pointer;
         background-color: var(--hoverColor);
     }
@@ -225,7 +225,7 @@
         display: block;
         font-size: 12px;
     }
-    .headerSection button {
+    .headerSection a {
         padding: 2%;
     }
     /* Nav */
@@ -328,7 +328,7 @@
     .headerSection figcaption {
         font-size: 15px;
     }
-    .headerSection button {
+    .headerSection a {
         padding: 2%;
         border-radius: 10px;
     }
