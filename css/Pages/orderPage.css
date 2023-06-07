@@ -4,6 +4,8 @@
       flex-direction: column;
       align-items: center;
       row-gap: 3vh;
+      padding-top: 3vh;
+      min-height: 64vh;
    }
 
    .order h2{
@@ -95,6 +97,11 @@
 }
 
 @media (min-width:700px) {
+   .order{
+      padding-top: 4vh;
+      min-height: 70vh;
+   }
+
    .order h2{
       font-size: 50px;
    }
@@ -145,6 +152,11 @@
 }
 
 @media (min-width:1000px) {
+   .order{
+      padding-top: 5vh;
+      min-height: 61vh;
+   }
+
    .order h2{
       font-size: 60px;
    }
@@ -180,7 +192,7 @@
    .order aside a{
       width: 90%;
       height: 6vh;
-      font-size: 36px;
+      font-size: 24px;
    }
 
    .order figure{

@@ -13,14 +13,17 @@ class MainPage{
                     <img src="./img/logo2.png" class="logo">
                 </figure>
                 <section class="headerSection">
-                    
                     <figure class="headerOrder">
-                        <img src="./img/shopping-cart.svg" class="cart-img">
-                        <figcaption>Order</figcaption>
+                        <a href="./orderHistory.php">
+                                <img src="./img/shopping-cart.svg" class="cart-img">
+                                <figcaption>Order</figcaption>
+                        </a>
                     </figure>
                     <figure class="headerMyPage">
-                        <img src="./img/my-page.svg" class="mypage-img">
-                        <figcaption>My Page</figcaption>
+                        <a href="">
+                            <img src="./img/my-page.svg" class="mypage-img">
+                            <figcaption>My Page</figcaption>
+                        </a>
                     </figure>
                     <a href="logout.php">Log Out</a>
                 </section>
@@ -160,131 +163,131 @@ class MainPage{
         return $mainPageAdv;
     }
 
-    public static function mainPageRestaurant() : string {
-        $mainPageRestaurant = '
-        <section class="mainRestaurant">
-            <h3>Offers for you</h3>
-            <article class="mainRestaurantArticle">
-                <a href="./restaurantPage.php">
-                    <figure>
-                        <img src="./img/mcdonald.jpg" alt="rest-img"/>
-                        <figcaption>
-                            <h4>Mc Donalds</h4>
-                            <ul>
-                                <li>
-                                    $
-                                </li>
-                                <li>
-                                </li>
-                                <li>
-                                    <img src="./img/star-gray.png" alt="star-img"/>
-                                    4.5
-                                </li>
-                            </ul>
-                        </figcaption>
-                    </figure>  
-                </a>
-                <a href="./restaurantPage.php">
-                    <figure>
-                        <img src="./img/mcdonald.jpg" alt="rest-img"/>
-                        <figcaption>
-                            <h4>Mc Donalds</h4>
-                            <ul>
-                                <li>
-                                    $
-                                </li>
-                                <li>
-                                </li>
-                                <li>
-                                    <img src="./img/star-gray.png" alt="star-img"/>
-                                    4.5
-                                </li>
-                            </ul>
-                        </figcaption>
-                    </figure>  
-                </a>
-                <a href="./restaurantPage.php">
-                    <figure>
-                        <img src="./img/mcdonald.jpg" alt="rest-img"/>
-                        <figcaption>
-                            <h4>Mc Donalds</h4>
-                            <ul>
-                                <li>
-                                    $
-                                </li>
-                                <li>
-                                </li>
-                                <li>
-                                    <img src="./img/star-gray.png" alt="star-img"/>
-                                    4.5
-                                </li>
-                            </ul>
-                        </figcaption>
-                    </figure>  
-                </a>
-                <a href="./restaurantPage.php">
-                    <figure>
-                        <img src="./img/mcdonald.jpg" alt="rest-img"/>
-                        <figcaption>
-                            <h4>Mc Donalds</h4>
-                            <ul>
-                                <li>
-                                    $
-                                </li>
-                                <li>
-                                </li>
-                                <li>
-                                    <img src="./img/star-gray.png" alt="star-img"/>
-                                    4.5
-                                </li>
-                            </ul>
-                        </figcaption>
-                    </figure>  
-                </a>
-                <a href="./restaurantPage.php">
-                    <figure>
-                        <img src="./img/mcdonald.jpg" alt="rest-img"/>
-                        <figcaption>
-                            <h4>Mc Donalds</h4>
-                            <ul>
-                                <li>
-                                    $
-                                </li>
-                                <li>
-                                </li>
-                                <li>
-                                    <img src="./img/star-gray.png" alt="star-img"/>
-                                    4.5
-                                </li>
-                            </ul>
-                        </figcaption>
-                    </figure>  
-                </a>
-                <a href="./restaurantPage.php">
-                    <figure>
-                        <img src="./img/mcdonald.jpg" alt="rest-img"/>
-                        <figcaption>
-                            <h4>Mc Donalds</h4>
-                            <ul>
-                                <li>
-                                    $
-                                </li>
-                                <li>
-                                </li>
-                                <li>
-                                    <img src="./img/star-gray.png" alt="star-img"/>
-                                    4.5
-                                </li>
-                            </ul>
-                        </figcaption>
-                    </figure>  
-                </a>
+    // public static function mainPageRestaurant() : string {
+    //     $mainPageRestaurant = '
+    //     <section class="mainRestaurant">
+    //         <h3>Offers for you</h3>
+    //         <article class="mainRestaurantArticle">
+    //             <a href="./restaurantPage.php">
+    //                 <figure>
+    //                     <img src="./img/mcdonald.jpg" alt="rest-img"/>
+    //                     <figcaption>
+    //                         <h4>Mc Donalds</h4>
+    //                         <ul>
+    //                             <li>
+    //                                 $
+    //                             </li>
+    //                             <li>
+    //                             </li>
+    //                             <li>
+    //                                 <img src="./img/star-gray.png" alt="star-img"/>
+    //                                 4.5
+    //                             </li>
+    //                         </ul>
+    //                     </figcaption>
+    //                 </figure>  
+    //             </a>
+    //             <a href="./restaurantPage.php">
+    //                 <figure>
+    //                     <img src="./img/mcdonald.jpg" alt="rest-img"/>
+    //                     <figcaption>
+    //                         <h4>Mc Donalds</h4>
+    //                         <ul>
+    //                             <li>
+    //                                 $
+    //                             </li>
+    //                             <li>
+    //                             </li>
+    //                             <li>
+    //                                 <img src="./img/star-gray.png" alt="star-img"/>
+    //                                 4.5
+    //                             </li>
+    //                         </ul>
+    //                     </figcaption>
+    //                 </figure>  
+    //             </a>
+    //             <a href="./restaurantPage.php">
+    //                 <figure>
+    //                     <img src="./img/mcdonald.jpg" alt="rest-img"/>
+    //                     <figcaption>
+    //                         <h4>Mc Donalds</h4>
+    //                         <ul>
+    //                             <li>
+    //                                 $
+    //                             </li>
+    //                             <li>
+    //                             </li>
+    //                             <li>
+    //                                 <img src="./img/star-gray.png" alt="star-img"/>
+    //                                 4.5
+    //                             </li>
+    //                         </ul>
+    //                     </figcaption>
+    //                 </figure>  
+    //             </a>
+    //             <a href="./restaurantPage.php">
+    //                 <figure>
+    //                     <img src="./img/mcdonald.jpg" alt="rest-img"/>
+    //                     <figcaption>
+    //                         <h4>Mc Donalds</h4>
+    //                         <ul>
+    //                             <li>
+    //                                 $
+    //                             </li>
+    //                             <li>
+    //                             </li>
+    //                             <li>
+    //                                 <img src="./img/star-gray.png" alt="star-img"/>
+    //                                 4.5
+    //                             </li>
+    //                         </ul>
+    //                     </figcaption>
+    //                 </figure>  
+    //             </a>
+    //             <a href="./restaurantPage.php">
+    //                 <figure>
+    //                     <img src="./img/mcdonald.jpg" alt="rest-img"/>
+    //                     <figcaption>
+    //                         <h4>Mc Donalds</h4>
+    //                         <ul>
+    //                             <li>
+    //                                 $
+    //                             </li>
+    //                             <li>
+    //                             </li>
+    //                             <li>
+    //                                 <img src="./img/star-gray.png" alt="star-img"/>
+    //                                 4.5
+    //                             </li>
+    //                         </ul>
+    //                     </figcaption>
+    //                 </figure>  
+    //             </a>
+    //             <a href="./restaurantPage.php">
+    //                 <figure>
+    //                     <img src="./img/mcdonald.jpg" alt="rest-img"/>
+    //                     <figcaption>
+    //                         <h4>Mc Donalds</h4>
+    //                         <ul>
+    //                             <li>
+    //                                 $
+    //                             </li>
+    //                             <li>
+    //                             </li>
+    //                             <li>
+    //                                 <img src="./img/star-gray.png" alt="star-img"/>
+    //                                 4.5
+    //                             </li>
+    //                         </ul>
+    //                     </figcaption>
+    //                 </figure>  
+    //             </a>
                 
-            </article>
-        </section>    
-        ';
-        return $mainPageRestaurant;
-    }
+    //         </article>
+    //     </section>    
+    //     ';
+    //     return $mainPageRestaurant;
+    // }
 
     // public static function mainPageRestaurant(string $title="Offers for you") : string {
     //     $mainPageRestaurant = '
