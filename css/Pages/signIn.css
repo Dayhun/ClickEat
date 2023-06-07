@@ -1,4 +1,4 @@
-@media (min-width: 200px) {
+@media (min-width: 300px) {
     .signIn {
         height: 100vh;
         background-color: var(--mainColor);
@@ -18,7 +18,7 @@
         row-gap: 2vh;
     }
     .signInFormContainer > form {
-        height: 210px;
+        height: 230px;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
@@ -69,6 +69,11 @@
     .signInFormContainer > a:hover {
         font-weight: 700;
     }
+    .signInFormContainer p {
+        color: red;
+        font-size: 13px;
+        padding: 3% 2% 5%;
+    }
 }
 
 @media (min-width: 700px) {
@@ -76,6 +81,7 @@
         width: 30%;
     }
     .signInFormContainer > form {
+        height: 270px;
         padding: 5%;
         justify-content: space-around;
     }
@@ -92,6 +98,10 @@
     .signInFormContainer > a {
         font-size: 16px;
     }
+    .signInFormContainer p {
+        font-size: 14px;
+        padding: 0% 2% 5%;
+    }
 }
 
 @media (min-width: 1000px) {
@@ -103,8 +113,12 @@
     }
     .signInFormContainer > form {
         padding: 4%;
+        height: 250px;
     }
     .signInFormContainer > form > input::placeholder {
         font-size: 15px;
+    }    
+    .signInFormContainer p {
+        padding: 0% 2% 3%;
     }
 }
