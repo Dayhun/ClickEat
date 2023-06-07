@@ -17,7 +17,8 @@ RestaurantDAO::init();
 $restaurantsList = RestaurantDAO::getRestaurants();;
 
 echo Page::htmlStart();
-echo MainPage::mainPageHeaderLogOut();
+// echo MainPage::mainPageHeaderLogOut();
+echo MainPage::mainPageHeader();
 echo MainPage::mainPageNav();
 echo MainPage::mainPageAdv();
 

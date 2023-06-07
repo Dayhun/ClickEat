@@ -1,43 +1,82 @@
 <?php
+require_once("inc/LoginManager.class.php");
+
 class MainPage{
     /**
      * @return string
      */
-    public static function mainPageHeaderLogIn() : string {
-        $mainPageHeader = '
-        <header class="mainHeader">
-            <figure>
-                <img src="./img/logo2.png" class="logo">
-            </figure>
-            <section class="headerSection">
-                <figure class="headerOrder">
-                    <img src="./img/shopping-cart.svg" class="cart-img">
-                    <figcaption>Order</figcaption>
+    public static function mainPageHeader() : string{
+        if(LoginManager::verifyLogin()) {
+            $mainPageHeader = '
+            <header class="mainHeader">
+                <figure>
+                    <img src="./img/logo2.png" class="logo">
                 </figure>
-                <figure class="headerMyPage">
-                    <img src="./img/my-page.svg" class="mypage-img">
-                    <figcaption>My Page</figcaption>
+                <section class="headerSection">
+                    
+                    <figure class="headerOrder">
+                        <img src="./img/shopping-cart.svg" class="cart-img">
+                        <figcaption>Order</figcaption>
+                    </figure>
+                    <figure class="headerMyPage">
+                        <img src="./img/my-page.svg" class="mypage-img">
+                        <figcaption>My Page</figcaption>
+                    </figure>
+                    <a href="logout.php">Log Out</a>
+                </section>
+            </header>
+            ';
+            return $mainPageHeader;
+        } else {
+            $mainPageHeader = '
+            <header class="mainHeader">
+                <figure>
+                    <img src="./img/logo2.png" class="logo">
                 </figure>
-            </section>
-        </header>
-        ';
-        return $mainPageHeader;
+                <section class="headerSection">
+                    <a href="./signInPage.php">Sign In</a>
+                    <a href="./signUpPage.php">Sign Up</a>
+                </section>
+            </header>
+            ';
+            return $mainPageHeader;
+        }
     }
+    // public static function mainPageHeaderLogIn() : string {
+    //     $mainPageHeader = '
+    //     <header class="mainHeader">
+    //         <figure>
+    //             <img src="./img/logo2.png" class="logo">
+    //         </figure>
+    //         <section class="headerSection">
+    //             <figure class="headerOrder">
+    //                 <img src="./img/shopping-cart.svg" class="cart-img">
+    //                 <figcaption>Order</figcaption>
+    //             </figure>
+    //             <figure class="headerMyPage">
+    //                 <img src="./img/my-page.svg" class="mypage-img">
+    //                 <figcaption>My Page</figcaption>
+    //             </figure>
+    //         </section>
+    //     </header>
+    //     ';
+    //     return $mainPageHeader;
+    // }
 
-    public static function mainPageHeaderLogOut() : string {
-        $mainPageHeader = '
-        <header class="mainHeader">
-            <figure>
-                <img src="./img/logo2.png" class="logo">
-            </figure>
-            <section class="headerSection">
-                <a href="./signInPage.php">Sign In</a>
-                <a href="./signUpPage.php">Sign Up</a>
-            </section>
-        </header>
-        ';
-        return $mainPageHeader;
-    }
+    // public static function mainPageHeaderLogOut() : string {
+    //     $mainPageHeader = '
+    //     <header class="mainHeader">
+    //         <figure>
+    //             <img src="./img/logo2.png" class="logo">
+    //         </figure>
+    //         <section class="headerSection">
+    //             <a href="./signInPage.php">Sign In</a>
+    //             <a href="./signUpPage.php">Sign Up</a>
+    //         </section>
+    //     </header>
+    //     ';
+    //     return $mainPageHeader;
+    // }
 
     public static function mainPageNav() : string {
         $mainPageNav = '
@@ -183,7 +222,7 @@ class MainPage{
 
     public static function mainRestFigure($restaurant){
         $mainRestFigure = '
-            <a href="">
+            <a href="./restaurantPage.php">
                 <figure>
                     <img src="'. $restaurant->getPicture() .'" alt="rest-img"/>
                     <figcaption>
@@ -201,7 +240,7 @@ class MainPage{
                         </ul>
                     </figcaption>
                 </figure>  
-            </a>  
+            </a>
         ';
         return $mainRestFigure;
     }

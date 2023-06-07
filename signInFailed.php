@@ -17,6 +17,7 @@ if(!empty($_POST)){
             $_SESSION["email"] = $userEmail;
 
             header("Location: mainPageLogged.php");
+            echo "success";
             exit();
         } else {
             header("Location: signInFailed.php");
@@ -25,6 +26,6 @@ if(!empty($_POST)){
 }
 
 echo Page::htmlStart();
-echo SignInPage::signIn();
+echo SignInPage::signInFail();
 echo Page::htmlEnd();
 
