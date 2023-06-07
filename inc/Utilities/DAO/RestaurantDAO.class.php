@@ -4,11 +4,11 @@ class RestaurantDAO{
 
    private static $db;
 
-   static function init(){
+   public static function init(){
       self::$db = new PDOAgent('Restaurant');
    }
 
-   static function getRestaurants()  {
+   public static function getRestaurants()  {
       $sql = "SELECT * FROM tb_restaurant_info";
       //Query!
       self::$db->query($sql);
@@ -18,7 +18,7 @@ class RestaurantDAO{
       return self::$db->getResultSet();
    }
 
-   static function getRestaurantsByCategory(string $category){
+   public static function getRestaurantsByCategory(string $category){
       $sql = "SELECT * FROM tb_restaurant_info WHERE category=:category";
 
       self::$db->query($sql);
@@ -28,4 +28,15 @@ class RestaurantDAO{
 
       return self::$db->getResultSet();
    }
+
+   public static function getRestaurantsById(int $restaurantId){
+    $sql = "SELECT * FROM tb_restaurant_info WHERE restaurantId=:restaurantId";
+
+    self::$db->query($sql);
+
+    self::$db->bind(":restaurantId",$restaurantId);
+    self::$db->execute();
+
+    return self::$db->singleResult();
+ }
 }

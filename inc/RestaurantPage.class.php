@@ -1,10 +1,10 @@
 <?php
 
 class RestaurantPage {
-    public static function restaurantTopSection() {
+    public static function restaurantTopSection($restaurant) {
         $restaurantTopSection = '
         <figure class="restaurantMainPic">
-            <img src="./img/mcdonald.jpg" alt="mcImg">
+            <img src="'. $restaurant->getPicture() .'" alt="mcImg">
         </figure>
         <section class="restaurantDetail">
             <h2>Mc Donald</h2>

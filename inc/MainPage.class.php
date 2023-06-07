@@ -197,7 +197,7 @@ class MainPage{
 
     public static function mainRestFigure($restaurant){
         $mainRestFigure = '
-            <a href="">
+            <a href="restaurantPage.php?restaurantId='. $restaurant->getRestaurantId() .'">
                 <figure>
                     <img src="'. $restaurant->getPicture() .'" alt="rest-img"/>
                     <figcaption>
