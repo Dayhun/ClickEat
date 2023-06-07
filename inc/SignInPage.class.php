@@ -14,12 +14,13 @@ class SignInPage {
                     <button type="submit">Sign In</button>
                 </form>
                 <article>
-                    <button type="button">Sign Up</button>
+                    <a href="./signUpPage.php">Sign Up</a>
                 </article>
-                <button>Visit the site without signing in</button>
+                <a href="./index.php">Visit the site without signing in</a>
             </article>
         </section>
         ';
         return $signIn;
     }
 }
+

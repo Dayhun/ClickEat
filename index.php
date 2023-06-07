@@ -9,13 +9,14 @@ require_once("./inc/Utilities/DAO/UserDAO.class.php");
 require_once("./inc/Utilities/DAO/RestaurantDAO.class.php");
 
 require_once("inc/Page.class.php");
-require_once("inc/SignInPage.class.php");
+// require_once("inc/SignInPage.class.php");
 require_once("inc/MainPage.class.php");
 require_once("inc/RestaurantPage.class.php");
 
 
 RestaurantDAO::init();
-$restaurants = RestaurantDAO::getRestaurantsByCategory("Burger");
+RestaurantDAO::setRestaurants();
+$restaurants = RestaurantDAO::getRestaurants();
 
 echo Page::htmlStart();
 echo MainPage::mainPageHeaderLogOut();
@@ -24,5 +25,4 @@ echo MainPage::mainPageAdv();
 echo MainPage::mainPageRestaurant($restaurants);
 echo MainPage::mainPageFooter();
 echo Page::htmlEnd();
-
 
