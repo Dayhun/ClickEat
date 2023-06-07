@@ -19,12 +19,13 @@
         column-gap: 4vw;
         justify-content: flex-end;
     }
-    .headerSection > figure {
+    .headerSection figure,
+    .headerSection figure > a {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .headerSection > figure:hover {
+    .headerSection figure:hover {
         cursor: pointer;
     }
     .headerSection img {
@@ -33,13 +34,13 @@
     .headerSection figcaption {
         display: none;
     }
-    .headerSection a {
+    .headerSection > a{
         border-radius: 5px;
         padding: 3%;
         background-color: #f2f2f2;
         color: black;
     }
-    .headerSection a:hover {
+    .headerSection > a:hover {
         cursor: pointer;
         background-color: var(--hoverColor);
     }
@@ -172,6 +173,7 @@
         display: flex;
         flex-direction: column;
         row-gap: 4vh;
+        bottom: 0;
     }
     .mainFooter > section {
         display: flex;
@@ -216,7 +218,8 @@
     .mainHeader > .headerSection {
         column-gap: 3vw;
     }
-    .headerSection > figure {
+    /* .headerSection figure, */
+    .headerSection figure > a {
         row-gap: 0.5vh;
     }
     .headerSection img {
@@ -226,9 +229,9 @@
         display: block;
         font-size: 12px;
     }
-    /* .headerSection a {
-        padding: 2%;
-    } */
+    .headerSection a {
+        color: black;
+    }
     /* Nav */
     .mainNav {
         padding: 1% 3%;

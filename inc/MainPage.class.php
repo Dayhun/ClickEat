@@ -13,14 +13,17 @@ class MainPage{
                     <img src="./img/logo2.png" class="logo">
                 </figure>
                 <section class="headerSection">
-                    
                     <figure class="headerOrder">
-                        <img src="./img/shopping-cart.svg" class="cart-img">
-                        <figcaption>Order</figcaption>
+                        <a href="./orderHistory.php">
+                                <img src="./img/shopping-cart.svg" class="cart-img">
+                                <figcaption>Order</figcaption>
+                        </a>
                     </figure>
                     <figure class="headerMyPage">
-                        <img src="./img/my-page.svg" class="mypage-img">
-                        <figcaption>My Page</figcaption>
+                        <a href="">
+                            <img src="./img/my-page.svg" class="mypage-img">
+                            <figcaption>My Page</figcaption>
+                        </a>
                     </figure>
                     <a href="logout.php">Log Out</a>
                 </section>
@@ -159,6 +162,7 @@ class MainPage{
         ';
         return $mainPageAdv;
     }
+
 
     public static function mainPageRestaurant(array $restaurants, int $page=1, string $category=null) : string {
 
