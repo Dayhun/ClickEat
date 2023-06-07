@@ -42,7 +42,7 @@
     }
     .headerSection > a:hover {
         cursor: pointer;
-        background-color: var(--hoverColor);
+        background-color: var(--hoverColor);        transition: .4s;
     }
     /* Nav */
     .mainNav {
@@ -204,6 +204,13 @@
     .mainFooter > article span {
         color: gainsboro;
     }
+    /* Page Btn */
+    .pageBtn {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        column-gap: 9vw;
+    }
 }
 @media (min-width: 700px) {
     /* Header */
@@ -314,6 +321,11 @@
         column-gap: 2vw;
         justify-content: space-between;
     }
+    /* Page Btn */
+    .pageBtn {
+        padding-top: 4vh;
+        column-gap: 5vw;
+    }
 }
 @media (min-width: 1000px) {
     /* Header */
@@ -407,5 +419,9 @@
         flex-direction: row;
         column-gap: 2vw;
         justify-content: space-between;
+    }
+    /* Page Btn */
+    .pageBtn {
+        column-gap: 3vw;
     }
 }

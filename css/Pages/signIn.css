@@ -47,6 +47,7 @@
     .signInFormContainer > article > a:hover {
         background-color: var(--hoverColor);
         color: black;
+        transition: .4s;
     }
     .signInFormContainer > article {
         display: flex;

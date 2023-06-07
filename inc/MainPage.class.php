@@ -165,8 +165,11 @@ class MainPage{
         }
 
         $mainPageRestaurant .= '
-            <a '.$btnPrev.' >Prev</a>
-            <a '.$btnNext.' >Next</a>
+            <article class="pageBtn">
+                <a '.$btnPrev.' >Prev</a>
+                <p>|</p>
+                <a '.$btnNext.' >Next</a>
+            </article>
         ';
 
         $mainPageRestaurant .= '        
