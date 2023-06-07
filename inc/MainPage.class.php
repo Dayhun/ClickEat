@@ -9,9 +9,11 @@ class MainPage{
         if(LoginManager::verifyLogin()) {
             $mainPageHeader = '
             <header class="mainHeader">
-                <figure>
-                    <img src="./img/logo2.png" class="logo">
-                </figure>
+                <a href="./index.php">
+                    <figure>
+                        <img src="./img/logo2.png" class="logo">
+                    </figure>
+                </a>
                 <section class="headerSection">
                     <figure class="headerOrder">
                         <a href="./orderHistory.php">
@@ -33,9 +35,11 @@ class MainPage{
         } else {
             $mainPageHeader = '
             <header class="mainHeader">
-                <figure>
-                    <img src="./img/logo2.png" class="logo">
-                </figure>
+                <a href="./index.php">
+                    <figure>
+                        <img src="./img/logo2.png" class="logo">
+                    </figure>
+                </a>
                 <section class="headerSection">
                     <a href="./signInPage.php">Sign In</a>
                     <a href="./signUpPage.php">Sign Up</a>

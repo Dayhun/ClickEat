@@ -7,10 +7,10 @@
         justify-content: space-around;
         align-items: center;
     }
-    .mainHeader > figure {
+    .mainHeader > a {
         width: 120px;
     }
-    .mainHeader > figure > img {
+    .mainHeader > a > figure > img {
         width: 100%;
     }
     .mainHeader > .headerSection {
