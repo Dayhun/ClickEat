@@ -7,22 +7,22 @@ class RestaurantPage {
             <img src="'. $restaurant->getPicture() .'" alt="mcImg">
         </figure>
         <section class="restaurantDetail">
-            <h2>Mc Donald</h2>
+            <h2>'. $restaurant->getRestaurantName() .'</h2>
             <ul>
                 <li>
-                $
+                '. $restaurant->getPriceRange() .'
                 </li>
                 <li>
                 </li>
                 <li>
                     <img src="./img/star-gray.png" alt="star-img"/>
-                    4.5
+                    '. $restaurant->getScore() .'
                 </li>
                 <li>
-                (3700 Ratings)
+                ('. $restaurant->getReview() .' Ratings)
                 </li>
             </ul>
-            <p>Burger</p>
+            <p>'. $restaurant->getCategory() .'</p>
         </section>
         ';
         return $restaurantTopSection;
