@@ -42,4 +42,3 @@ else{
 
 echo MainPage::mainPageFooter();
 echo Page::htmlEnd();
-

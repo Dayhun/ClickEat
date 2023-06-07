@@ -1,7 +1,7 @@
 <?php
 require_once("inc/config.inc.php");
 require_once("inc/Entities/User.class.php");
-require_once("inc/Utilities/PDOService.class.php");
+require_once("inc/Utilities/PDOAgent.class.php");
 require_once("inc/Utilities/DAO/UserDAO.class.php");
 require_once("inc/Page.class.php");
 require_once("inc/SignInPage.class.php");
@@ -16,7 +16,7 @@ if(!empty($_POST)){
             $_SESSION["loggedin"] = true;
             $_SESSION["email"] = $userEmail;
 
-            header("Location: mainPageLogged.php");
+            header("Location: index.php");
             exit();
         } else {
             header("Location: signInFailed.php");
