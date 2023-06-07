@@ -2,7 +2,9 @@
 @import "./variable.css";
 
 /* Pages css */
+@import "./Pages/signUp.css";
 @import "./Pages/signIn.css";
 @import "./Pages/main.css";
 @import "./Pages/restaurant.css";
 @import "./Pages/orderPage.css";
+
