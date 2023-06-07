@@ -6,6 +6,9 @@ require_once("inc/Utilities/DAO/UserDAO.class.php");
 require_once("inc/Page.class.php");
 require_once("inc/SignInPage.class.php");
 
+session_start();
+session_destroy();
+
 if(!empty($_POST)){
     UserDAO::init();
     $email = $_POST['email'];
@@ -27,4 +30,3 @@ if(!empty($_POST)){
 echo Page::htmlStart();
 echo SignInPage::signIn();
 echo Page::htmlEnd();
-
