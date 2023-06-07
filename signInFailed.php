@@ -16,7 +16,7 @@ if(!empty($_POST)){
             $_SESSION["loggedin"] = true;
             $_SESSION["email"] = $userEmail;
 
-            header("Location: mainPageLogged.php");
+            header("Location: index.php");
             echo "success";
             exit();
         } else {
