@@ -4,10 +4,6 @@ class UserDAO {
     
     private static $db;
 
-    public static function startDb() {
-        self::$db = new PDOAgent("User");
-    }
-
     static function init()  {
         self::$db = new PDOAgent('User');
     }
