@@ -13,16 +13,32 @@ require_once("inc/Page.class.php");
 require_once("inc/MainPage.class.php");
 require_once("inc/RestaurantPage.class.php");
 
-
 RestaurantDAO::init();
-RestaurantDAO::setRestaurants();
-$restaurants = RestaurantDAO::getRestaurants();
+$restaurantsList = RestaurantDAO::getRestaurants();;
 
 echo Page::htmlStart();
 echo MainPage::mainPageHeaderLogOut();
 echo MainPage::mainPageNav();
 echo MainPage::mainPageAdv();
-echo MainPage::mainPageRestaurant($restaurants);
+
+
+if(!empty($_GET)){
+   if(!empty($_GET['restaurantCategory'])){
+      $category = $_GET['restaurantCategory'];
+      $page = $_GET['restaurantPage'];
+      $restaurantsList = RestaurantDAO::getRestaurantsByCategory($category);
+      echo MainPage::mainPageRestaurant($restaurantsList, $page, $category);
+   }
+   else if(!empty($_GET['restaurantPage'])){
+      $page = $_GET['restaurantPage'];
+      $restaurantsList = RestaurantDAO::getRestaurants();
+      echo MainPage::mainPageRestaurant($restaurantsList, $page);
+   }
+}
+else{
+   echo MainPage::mainPageRestaurant($restaurantsList);
+}
+
 echo MainPage::mainPageFooter();
 echo Page::htmlEnd();
 
