@@ -22,15 +22,16 @@ class SingUpPage{
           <label for="confirm_password">Confirm Password:</label>
           <input type="password" id="confirm_password" name="confirm_password" required><br><br>
   
-          <label for="phone_number">Phone Number:</label>
-          <input type="tel" id="phone_number" name="phone_number" required><br><br>
+          <label for="phone">Phone Number:</label>
+          <input type="tel" id="phone" name="phone" required><br><br>
           
           <input type="submit" value="Signup">
         </form>
         </section>
       ';
-      return $signUp;
+
   }
+
 
 }
 
