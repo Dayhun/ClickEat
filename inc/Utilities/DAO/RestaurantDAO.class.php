@@ -19,7 +19,7 @@ class RestaurantDAO{
       return self::$db->getResultSet();
    }
 
-   static function getRestaurantByCategory(string $category){
+   static function getRestaurantsByCategory(string $category){
       $sql = "SELECT * FROM tb_restaurant_info WHERE category=:category";
 
       self::$db->query($sql);
