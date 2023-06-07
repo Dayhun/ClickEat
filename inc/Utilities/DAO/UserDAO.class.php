@@ -5,11 +5,11 @@ class UserDAO {
     private static $db;
 
     public static function startDb() {
-        self::$db = new PDOService("User");
+        self::$db = new PDOAgent("User");
     }
 
     static function init()  {
-        self::$db = new PDOService('User');
+        self::$db = new PDOAgent('User');
     }
 
     public static function getUserByEmail(string $email) {

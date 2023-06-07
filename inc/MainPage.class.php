@@ -45,41 +45,6 @@ class MainPage{
             return $mainPageHeader;
         }
     }
-    // public static function mainPageHeaderLogIn() : string {
-    //     $mainPageHeader = '
-    //     <header class="mainHeader">
-    //         <figure>
-    //             <img src="./img/logo2.png" class="logo">
-    //         </figure>
-    //         <section class="headerSection">
-    //             <figure class="headerOrder">
-    //                 <img src="./img/shopping-cart.svg" class="cart-img">
-    //                 <figcaption>Order</figcaption>
-    //             </figure>
-    //             <figure class="headerMyPage">
-    //                 <img src="./img/my-page.svg" class="mypage-img">
-    //                 <figcaption>My Page</figcaption>
-    //             </figure>
-    //         </section>
-    //     </header>
-    //     ';
-    //     return $mainPageHeader;
-    // }
-
-    // public static function mainPageHeaderLogOut() : string {
-    //     $mainPageHeader = '
-    //     <header class="mainHeader">
-    //         <figure>
-    //             <img src="./img/logo2.png" class="logo">
-    //         </figure>
-    //         <section class="headerSection">
-    //             <a href="./signInPage.php">Sign In</a>
-    //             <a href="./signUpPage.php">Sign Up</a>
-    //         </section>
-    //     </header>
-    //     ';
-    //     return $mainPageHeader;
-    // }
 
     public static function mainPageNav() : string {
         $mainPageNav = '
@@ -163,6 +128,74 @@ class MainPage{
         return $mainPageAdv;
     }
 
+    public static function mainPageRestaurant(array $restaurants, int $page=1, string $category=null) : string {
+
+        if($category == null){
+            $btnNext = 'href="?restaurantPage='. $page+1 .'"';
+            $btnPrev = 'href="?restaurantPage='. $page-1 .'"';
+        }else{
+            $btnNext = 'href="?restaurantCategory='.$category.'&restaurantPage='. $page+1 .'"';
+            $btnPrev = 'href="?restaurantCategory='.$category.'&restaurantPage='. $page-1 .'"';
+        }
+
+        if($page == ceil(count($restaurants)/6)){
+            $i = count($restaurants)-6;
+            $limit = count($restaurants);
+            $btnNext = '';
+        }
+        else{
+            $i = (6*$page)-6;
+            $limit = 6*$page;
+            if($page===1){
+                $btnPrev = '';
+            }
+        }
+
+        $mainPageRestaurant = '
+        <section class="mainRestaurant">
+            <h3>Offers for you</h3>
+            <article class="mainRestaurantArticle">';
+
+        for($i; $i<$limit; $i++){
+            $mainPageRestaurant .= self::mainRestFigure($restaurants[$i]);
+        }
+
+        $mainPageRestaurant .= '
+            <a '.$btnPrev.' >Prev</a>
+            <a '.$btnNext.' >Next</a>
+        ';
+
+        $mainPageRestaurant .= '        
+            </article>
+        </section>    
+        ';
+        return $mainPageRestaurant;
+    }
+
+    public static function mainRestFigure($restaurant){
+        $mainRestFigure = '
+            <a href="">
+                <figure>
+                    <img src="'. $restaurant->getPicture() .'" alt="rest-img"/>
+                    <figcaption>
+                        <h4>'. $restaurant->getRestaurantName() .'</h4>
+                        <ul>
+                            <li>
+                                '. $restaurant->getPriceRange() .'
+                            </li>
+                            <li>
+                            </li>
+                            <li>
+                                <img src="./img/star-gray.png" alt="star-img"/>
+                                '. $restaurant->getScore() .'
+                            </li>
+                        </ul>
+                    </figcaption>
+                </figure>  
+            </a>  
+        ';
+        return $mainRestFigure;
+    }
 
     public static function mainPageFooter() : string {
         $mainPageFooter = '
