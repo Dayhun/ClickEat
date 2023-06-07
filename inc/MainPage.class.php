@@ -163,43 +163,6 @@ class MainPage{
         return $mainPageAdv;
     }
 
-    // public static function mainPageRestaurant(string $title="Offers for you") : string {
-    //     $mainPageRestaurant = '
-    //     <section class="mainRestaurant">
-    //         <h3>'.$title.'</h3>
-    //         <article class="mainRestaurantArticle">
-    //     ';
-    //     foreach ($restaurantList as $restaurant) {
-    //         $mainPageRestaurant.= self::mainRestFigure($restaurant);
-    //     }
-    //     $mainPageRestaurant.='
-    //         </article>
-    //     </section>    
-    //     ';
-    //     return $mainPageRestaurant;
-    // }
-
-    // public static function mainRestFigure($res){
-    //     $mainRestFigure = '
-        //         <figure>
-        //             <img src="'.$res->getPicture().'" alt="'.$res->getRestName().'"/>
-        //             <figcaption>
-        //                 <h3>'.$res->getRestName().'</h3>
-        //                 <ul>
-                                // <li>
-                                //     '.$res->getpriceRange().'
-                                // </li>
-                                // <li>
-                                //     <img src="./img/star-gray.png" alt="star-img"/>
-                                //     '.$res->getScore().'
-                                // </li>
-        //                 </ul>
-        //             </figcaption>
-        //         </figure>    
-        //</section>
-    //     ';
-    //     return $mainRestFigure;
-    // }
 
     public static function mainPageFooter() : string {
         $mainPageFooter = '
