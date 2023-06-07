@@ -164,6 +164,7 @@ class MainPage{
     }
 
 
+
     public static function mainPageRestaurant(array $restaurants, int $page=1, string $category=null) : string {
 
         if($category == null){
