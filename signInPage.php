@@ -15,7 +15,7 @@ if(!empty($_POST)){
             session_start();
             $_SESSION["loggedin"] = true;
             $_SESSION["email"] = $userEmail;
-
+            
             header("Location: index.php");
             exit();
         } else {
