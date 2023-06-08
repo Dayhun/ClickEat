@@ -2,15 +2,15 @@
 
 class Userpage{
 
-public static function Userpage() {
+public static function Userpage($user) {
     $Userpage= '
       <section class="container">
         <figure>
-          <img src="./img/logo.png" alt="Profile">
+          <img src="'. $user->getPicture() .'" alt="Profile">
         </figure>
       <h3>Profile</h3>
-      <p>Name:</p>
-      <p>Email:</p>
+      <p>Name:'. $user->getUsername() .'</p>
+      <p>Email: '. $user->getEmail(). '</p>
       </section>
 ';
 return $Userpage;

@@ -22,7 +22,7 @@ class MainPage{
                         </a>
                     </figure>
                     <figure class="headerMyPage">
-                        <a href="">
+                        <a href="./userPage.php">
                             <img src="./img/my-page.svg" class="mypage-img">
                             <figcaption>My Page</figcaption>
                         </a>
