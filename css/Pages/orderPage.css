@@ -103,6 +103,7 @@
    }
 
    .order h2{
+      width: 88%;
       font-size: 50px;
    }
 
@@ -111,6 +112,7 @@
    }
 
    .order section{
+      width: 88%;
       column-gap: 6%;
    }
 
@@ -136,7 +138,7 @@
 
    .order aside a{
       border-radius: 36px;
-      font-size: 26px;
+      font-size: 24px;
    }
 
    .order aside a:first-child:hover{
@@ -157,10 +159,6 @@
       min-height: 61vh;
    }
 
-   .order h2{
-      font-size: 60px;
-   }
-
    .order main{
       row-gap: 6vh;
    }
@@ -177,22 +175,9 @@
       width: 100%;
    }
 
-   .order h3{
-      font-size: 45px;
-   }
-
-   .order ul{
-      font-size: 36px;
-   }
-
-   .order article > p{
-      font-size: 30px;
-   }
-
    .order aside a{
       width: 90%;
       height: 6vh;
-      font-size: 24px;
    }
 
    .order figure{

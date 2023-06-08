@@ -34,7 +34,7 @@ class RestaurantPage {
                 <button class="orderBtn" type="submit">Order Now</button>
             </article>
             <article class="menuArticle">';
-        
+
         foreach($restaurantMenu as $menuInfo){
             $restaurantMenuSection .= self::menuInfo($menuInfo);
         }
@@ -58,7 +58,7 @@ class RestaurantPage {
                         <p>$'. $menuInfo->getPrice() .'</p>
                     </article>
                     <section class="menuBtn">
-                        <input type=number name="'.$menuInfo->getMenuId().' value="0" placeholder="Write the amount"/>
+                        <input type=number name="'. $menuInfo->getMenuId() .'" value="0" placeholder="Write the amount"/>
                     </section>
                 </figcaption>
                 <img src="'. $menuInfo->getPicture() .'" alt="burger-img"/>

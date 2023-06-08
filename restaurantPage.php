@@ -7,6 +7,7 @@ require_once("./inc/Entities/Restaurant.class.php");
 require_once("./inc/Entities/Menu.class.php");
 require_once("./inc/Entities/Order.class.php");
 require_once("./inc/Entities/OrderNumber.class.php");
+require_once("./inc/Entities/User.class.php");
 
 require_once("./inc/Utilities/PDOAgent.class.php");
 require_once("./inc/Utilities/DAO/RestaurantDAO.class.php");
@@ -26,9 +27,11 @@ OrderNumberDAO::init();
 
 echo Page::htmlStart();
 echo MainPage::mainPageHeader();
+$location = "Location: restaurantPage.php?restaurantId=";
 
 if(!empty($_GET)){
     if(!empty($_GET['restaurantId'])){
+        $location .= $_GET['restaurantId'];
         $restaurantId = intval($_GET['restaurantId']);
         $restaurantInfo = RestaurantDAO::getRestaurantsById($restaurantId);
         $restaurantMenu = MenuDAO::getMenuByRestaurantId($restaurantId);
@@ -38,13 +41,34 @@ if(!empty($_GET)){
 }
 
 if(!empty($_POST)){
-    $newOrder = new Order();
-    // $newOrder->
+    $userId = $_SESSION["email"]->getUserId();
+
+    date_default_timezone_set("America/Vancouver");
+    $date = date("Y-m-d-H-i-s");
+
+    $dateExploded = explode("-", $date);
+    $orderNumber = null;
+    foreach($dateExploded as $number){
+        $orderNumber += intval($number);
+    }
+
+    foreach($_POST as $menuId=>$amount){
+        if($amount != 0){
+            $newOrder = new Order();
+            $newOrder->setOrderNumber($orderNumber);
+            $newOrder->setUserId($userId);
+            $newOrder->setMenuId($menuId);
+            $newOrder->setAmount($amount);
+            $newOrder->setDate($date);
+
+            OrderDAO::insertOrder($newOrder);
+        }
+    }
+
     header("Location: orderHistory.php");
     unset($_POST);
-} else {
-    header("Location: restaurantPage.php");
 }
+
 echo MainPage::mainPageFooter();
 echo Page::htmlEnd();
 
