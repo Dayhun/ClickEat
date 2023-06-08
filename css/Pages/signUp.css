@@ -57,6 +57,9 @@
     border-radius: 5px;
     border: 1px solid var(--borderColor);
   }
+  .signUpInput  p {
+    color: red;
+  }
 }
 
 @media (min-width: 700px) {

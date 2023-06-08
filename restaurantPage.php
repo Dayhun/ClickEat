@@ -31,6 +31,9 @@ if(!empty($_GET)){
     }
 }
 
+if(!empty($_POST)){
+    
+}
 echo MainPage::mainPageFooter();
 echo Page::htmlEnd();
 

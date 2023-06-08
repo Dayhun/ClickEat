@@ -30,5 +30,5 @@ if (!empty($_POST)){
         header("Location: signUpDup.php");
     }    
 }
-echo SignUpPage::signUp();
+echo SignUpPage::signUpDup();
 echo Page::htmlEnd();

@@ -29,9 +29,9 @@ class RestaurantPage {
     }
     public static function restaurantMenuSection(array $restaurantMenu) {
         $restaurantMenuSection = '
-        <section class="restaurantMenu">
+        <form class="restaurantMenu" method="POST">
             <article class="orderArticle orderNone">
-                <button class="orderBtn">Order Now</button>
+                <button class="orderBtn" type="submit">Order Now</button>
             </article>
             <article class="menuArticle">';
         
@@ -42,9 +42,9 @@ class RestaurantPage {
         $restaurantMenuSection .= '
             </article>    
             <article class="orderArticle">
-                <button class="orderBtn">Order Now</button>
+                <button class="orderBtn" type="submit">Order Now</button>
             </article>
-        </section>
+        </form>
         ';
         return $restaurantMenuSection;
     }
@@ -58,9 +58,7 @@ class RestaurantPage {
                         <p>$'. $menuInfo->getPrice() .'</p>
                     </article>
                     <section class="menuBtn">
-                        <button class="minusBtn">-</button>
-                        <span>0</span>
-                        <button class="plusBtn">+</button>
+                        <input type=number name="'.$menuInfo->getMenuId().' value="0" placeholder="Write the amount"/>
                     </section>
                 </figcaption>
                 <img src="'. $menuInfo->getPicture() .'" alt="burger-img"/>
