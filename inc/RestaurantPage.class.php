@@ -29,7 +29,7 @@ class RestaurantPage {
     }
     public static function restaurantMenuSection(array $restaurantMenu) {
         $restaurantMenuSection = '
-        <form class="restaurantMenu" method="POST">
+        <form class="restaurantMenu" method="POST" action="'.$_SERVER["PHP_SELF"].'">
             <article class="orderArticle orderNone">
                 <button class="orderBtn" type="submit">Order Now</button>
             </article>
