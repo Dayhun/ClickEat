@@ -1,0 +1,118 @@
+@media (min-width: 300px) {
+
+.container{
+    height: 100vh;
+    background-color: var(--mainColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 4vh;
+
+}
+.container figure{
+display: flex;
+justify-content:center ;
+
+}
+ 
+.container img{
+width: 50%;
+padding: 4vh;
+
+
+ }
+
+}
+
+.container h3{
+    padding: 2vh;
+color:var(--btnColor);
+font-size: xx-large;
+}
+
+.container p{
+    padding: 2vh;
+color:var(--btnColor);
+font-size: large;
+
+}
+
+@media (min-width: 700px) {
+    
+
+
+    .container{
+        height: 100vh;
+        background-color: var(--mainColor);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: vh;
+    
+    }
+    .container img{
+        width: 45%;
+        
+         }
+        
+        }
+        
+        .container h3{
+            text-align: center;
+        color:var(--btnColor);
+        font-size: larger;
+        }
+        
+        .container p{
+            padding: 2%;
+            text-align: center;
+        color:var(--btnColor);
+        font-size: medium;
+        
+        }
+@media (min-width: 1000px) {
+    .container{
+        height: 100%;
+        background-color: var(--mainColor);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 4vh;
+    
+    }
+
+
+.container{
+    height: 100vh;
+    background-color: var(--mainColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 4vh;
+
+}
+    .container img{
+
+
+        width: 18%;
+         }
+        
+        }
+        
+        .container h3{
+            text-align: center;
+        color:var(--btnColor);
+        font-size: larger;
+        }
+        
+        .container p{
+            padding: 2%;
+            text-align: center;
+        color:var(--btnColor);
+        font-size: medium;
+        
+        }
