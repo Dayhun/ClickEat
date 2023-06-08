@@ -1,0 +1,125 @@
+@media (min-width: 300px) {
+    .signIn {
+        height: 100vh;
+        background-color: var(--mainColor);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 4vh;
+    }
+    .signIn img {
+        width: 50%;
+    }
+    .signInFormContainer {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2vh;
+    }
+    .signInFormContainer > form {
+        height: 230px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background-color: white;
+        padding: 8%;
+        border-radius: 10px;
+        border: 1px solid var(--borderColor);
+    }
+    .signInFormContainer > form > input::placeholder {
+        color: var(--inputColor);
+        font-size: 15px;
+    }
+    .signInFormContainer > form > input {
+        border: none;
+        border-bottom: 1px solid var(--borderColor);
+        padding: 4% 2%;
+    }
+    .signInFormContainer [type="submit"] {
+        background-color: var(--btnColor);
+        color: white;
+        border: none;
+        padding: 3%;
+        border-radius: 7px;
+    }
+    .signInFormContainer [type="submit"]:hover,
+    .signInFormContainer > article > a:hover {
+        background-color: var(--hoverColor);
+        color: black;
+        transition: .4s;
+    }
+    .signInFormContainer > article {
+        display: flex;
+        justify-content: center;
+    }
+    .signInFormContainer > article > a {
+        width: 40%;
+        background-color: var(--btnColor);
+        color: white;
+        padding: 3%;
+        border-radius: 7px;
+        text-align: center;
+    }
+    .signInFormContainer > a {
+        background-color: transparent;
+        text-decoration: underline;
+        color: black;
+        text-align: center;
+    }
+    .signInFormContainer > a:hover {
+        font-weight: 700;
+    }
+    .signInFormContainer p {
+        color: red;
+        font-size: 13px;
+        padding: 3% 2% 5%;
+    }
+}
+
+@media (min-width: 700px) {
+    .signIn img {
+        width: 30%;
+    }
+    .signInFormContainer > form {
+        height: 270px;
+        padding: 5%;
+        justify-content: space-around;
+    }
+    .signInFormContainer > form > input {
+        padding: 2%;
+    }
+    .signInFormContainer > form > input::placeholder {
+        font-size: 17px;
+    }
+    .signInFormContainer [type="submit"],
+    .signInFormContainer > article > a {
+        font-size: 17px;
+    }
+    .signInFormContainer > a {
+        font-size: 16px;
+    }
+    .signInFormContainer p {
+        font-size: 14px;
+        padding: 0% 2% 5%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .signIn img {
+        width: 15%;
+    }
+    .signInFormContainer {
+        width: 40%;
+    }
+    .signInFormContainer > form {
+        padding: 4%;
+        height: 250px;
+    }
+    .signInFormContainer > form > input::placeholder {
+        font-size: 15px;
+    }    
+    .signInFormContainer p {
+        padding: 0% 2% 3%;
+    }
+}

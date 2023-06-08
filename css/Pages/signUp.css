@@ -45,6 +45,7 @@
   .signUpFormContainer [type="submit"]:hover {
       background-color: var(--hoverColor);
       color: black;
+      transition: .4s;
   }
   .signUpFormContainer article {
       display: flex;
@@ -55,6 +56,9 @@
     padding: 2%;
     border-radius: 5px;
     border: 1px solid var(--borderColor);
+  }
+  .signUpInput  p {
+    color: red;
   }
 }
 
