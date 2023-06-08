@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 06, 2023 at 07:23 AM
+-- Generation Time: Jun 08, 2023 at 05:02 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -35,6 +35,17 @@ CREATE TABLE `tb_order` (
   `amount` int(11) NOT NULL,
   `date` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `tb_order`
+--
+
+INSERT INTO `tb_order` (`orderid`, `orderNumber`, `userId`, `menuId`, `amount`, `date`) VALUES
+(1, 2095, 41, 1, 1, '2023-06-06 10:30:20'),
+(2, 2095, 41, 2, 2, '2023-06-06 10:30:20'),
+(3, 2095, 41, 3, 1, '2023-06-06 10:30:20'),
+(4, 2080, 41, 5, 2, '2023-06-07 14:20:10'),
+(5, 2080, 41, 6, 1, '2023-06-07 14:20:10');
 
 -- --------------------------------------------------------
 
@@ -7743,7 +7754,7 @@ ALTER TABLE `tb_user_info`
 -- AUTO_INCREMENT for table `tb_order`
 --
 ALTER TABLE `tb_order`
-  MODIFY `orderid` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `orderid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `tb_restaurant_address`
