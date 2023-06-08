@@ -45,6 +45,7 @@
   .signUpFormContainer [type="submit"]:hover {
       background-color: var(--hoverColor);
       color: black;
+      transition: .4s;
   }
   .signUpFormContainer article {
       display: flex;

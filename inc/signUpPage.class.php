@@ -8,7 +8,7 @@ class SignUpPage {
         <section class="signUp">
             <img src="./img/logo.png" alt="Logo"/>
             <article class="signUpFormContainer">
-                <form method="post">
+                <form method="POST" action="'.$_SERVER["PHP_SELF"].'">
                     <section class="signUpSection">
                         <article class="signUpInput">
                             <label for="email">Email</label>
@@ -23,12 +23,8 @@ class SignUpPage {
                             <input type="password" id="confirmPw" name="confirmPw" required/>
                         </article>
                         <article class="signUpInput">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" name="name" required/>
-                        </article>
-                        <article class="signUpInput">
-                            <label for="phoneNumber">Phone Number</label>
-                            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+                            <label for="username">Name</label>
+                            <input type="text" id="username" name="username" required/>
                         </article>
                     </section>
                     <button type="submit">Sign Up</button>
