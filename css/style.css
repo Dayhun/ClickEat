@@ -3,6 +3,7 @@
 
 /* Pages css */
 @import "./Pages/signUp.css";
+@import"./Pages/userPage.css";
 @import "./Pages/signIn.css";
 @import "./Pages/main.css";
 @import "./Pages/restaurant.css";
